@@ -1,0 +1,195 @@
+* {
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+body {
+    width: auto;
+    background: linear-gradient(#3BB2BF, #9CD9D9, #F2CD5E, #F2A74B, #D98977);
+}
+
+header{
+    display: inline;
+}
+
+.encabezado {
+    width: auto;
+    position: relative;
+    margin: 90px 90px;
+}
+
+nav {
+    position: absolute;
+    top: 50px;
+    right: 544px;
+    font-style: italic;
+}
+
+nav li{
+    display: inline-block;
+    text-align: center;
+}
+
+main {
+    width: auto;
+    display: flex;
+    margin-left: 80px;
+    margin-bottom: 50px;
+}
+
+.caja1, .caja2 {
+    width: main-width/2;
+    padding: 50px;
+}
+
+.MensajeAEncriptar {
+    margin-top: 5px;
+    margin-left: 90px;
+}
+
+.MensajeEncriptado {
+    position: relative;
+    margin-top: 5px;
+    margin-left: 90px;
+    margin-right: 90px;
+    background-image: url(Imagenes/Muñeco.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 300px;
+}
+
+.botones {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.encriptar {
+    position: relative;
+    background-color: #D98977;
+    border: none;
+    font-size: 28px;
+    font-weight: bold;
+    color:  black;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-left: 145px;
+}
+
+.encriptar:after {
+    content: "";
+    background: #3BB2BF;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+.encriptar:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+.desencriptar {
+    position: relative;
+    background-color: #3BB2BF;
+    border: none;
+    font-size: 28px;
+    font-weight: bold;
+    color: black;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+.desencriptar:after {
+    content: "";
+    background: #D98977;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+.desencriptar:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+.CopiarMensaje {
+    position: relative;
+    background-color: #F2CD5E;
+    border: none;
+    font-size: 28px;
+    font-weight: bold;
+    color: black;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 265px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+}
+
+.CopiarMensaje:after {
+    content: "";
+    background: #3BB2BF;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+.CopiarMensaje:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+.Informacion {
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 90px;
+}
+
+footer {
+    width: auto;
+    background: linear-gradient( #D98977);
+}
