@@ -11,49 +11,52 @@ body {
 }
 
 header{
-    display: inline;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    place-items: center;
 }
 
-.encabezado {
-    width: auto;
+.logo {
+    width: 30%;
     position: relative;
-    margin: 90px 90px;
+    padding: 50px 100px;
+    float: center;
 }
 
-nav {
-    position: absolute;
-    top: 50px;
-    right: 544px;
-    font-style: italic;
-}
-
-nav li{
-    display: inline-block;
-    text-align: center;
+.titulo {
+    width: 70%;
+    position: relative;
+    padding: 50px;
+    float: center;
 }
 
 main {
-    width: auto;
-    display: flex;
-    margin-left: 80px;
-    margin-bottom: 50px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    place-items: center;
 }
 
-.caja1, .caja2 {
-    width: main-width/2;
-    padding: 50px;
+.caja1 {
+    width: 50%;
+    height: 100%;
+    padding: 25px;
+}
+
+.caja2 {
+    width: 50%;
+    height: 100%;
+    padding: 25px;
 }
 
 .MensajeAEncriptar {
     margin-top: 5px;
-    margin-left: 90px;
 }
 
 .MensajeEncriptado {
     position: relative;
     margin-top: 5px;
-    margin-left: 90px;
-    margin-right: 90px;
     background-image: url(Imagenes/Muñeco.png);
     background-repeat: no-repeat;
     background-position: 50%;
@@ -61,7 +64,9 @@ main {
 }
 
 .botones {
-    display: flex;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    place-items: center;
     flex-direction: row;
     margin-top: 10px;
 }
@@ -74,14 +79,13 @@ main {
     font-weight: bold;
     color:  black;
     padding: 20px;
-    width: 200px;
+    width: 100%;
     text-align: center;
     transition-duration: 0.4s;
     text-decoration: none;
     overflow: hidden;
     cursor: pointer;
     border-radius: 10px;
-    margin-left: 145px;
 }
 
 .encriptar:after {
@@ -112,13 +116,12 @@ main {
     font-weight: bold;
     color: black;
     padding: 20px;
-    width: 200px;
+    width: 100%;
     text-align: center;
     transition-duration: 0.4s;
     text-decoration: none;
     overflow: hidden;
     cursor: pointer;
-    margin-left: 20px;
     border-radius: 10px;
 }
 
@@ -150,14 +153,13 @@ main {
     font-weight: bold;
     color: black;
     padding: 20px;
-    width: 200px;
+    width: 100%;
     text-align: center;
     transition-duration: 0.4s;
     text-decoration: none;
     overflow: hidden;
     cursor: pointer;
-    margin-top: 20px;
-    margin-left: 265px;
+    margin-top: 10px;
     display: flex;
     flex-direction: row;
     border-radius: 10px;
@@ -170,8 +172,7 @@ main {
     position: absolute;
     padding-top: 300%;
     padding-left: 350%;
-    margin-left: -20px!important;
-    margin-top: -120%;
+    margin-top: -100%;
     opacity: 0;
     transition: all 0.8s
 }
@@ -186,10 +187,66 @@ main {
 .Informacion {
     font-size: 25px;
     font-weight: bold;
-    margin-left: 90px;
 }
 
 footer {
-    width: auto;
+    width: 100%;
+    height: 100px;
     background: linear-gradient( #D98977);
+}
+
+@media screen and (max-width:480px) {
+
+    header{
+        width: auto;
+        display: inline-block;
+        place-items: center;
+        align-items: center;
+    }
+
+    .logo{
+        width: auto;
+        position: relative;
+        align-items: center;
+    }
+
+    .titulo {
+        width: auto;
+        position: relative;
+        text-align: center;
+    }
+
+    main {
+        width: auto;
+        display: inline-block;
+        place-items: center;
+        align-items: center;
+    }
+
+    .caja1 {
+        width: auto;
+        height: auto;
+        display: inline-block;
+        place-items: center;
+        align-items: center;
+        position: relative;
+    }
+    
+    .caja2 {
+        width: auto;
+        height: auto;
+        position: relative;
+    }
+
+    .Informacion {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    footer {
+        width: auto;
+        height: auto;
+        background: linear-gradient( #D98977);
+    }
+    
 }
