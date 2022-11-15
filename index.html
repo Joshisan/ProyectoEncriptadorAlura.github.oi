@@ -1,0 +1,59 @@
+<!DOCTYPE html> 
+
+<html lang="es">
+
+<head>
+    <Meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Encriptador de Texto Proyecto Oracle ONE - Alura </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&display=swap" rel="stylesheet">
+</head>
+
+<body> 
+    <header>
+        <div class="logo">
+            <h1>
+                <img src="Imagenes/Vector.png" alt="Logo de Academia Alura">
+            </h1>
+        </div>
+        <div class="titulo">
+            <p>Proyecto Alura - Encriptador de Texto</p>
+        </div>
+    </header>
+        
+    <main>
+        <section class="caja1">
+            <textarea class="MensajeAEncriptar" cols="37" rows="6" placeholder="Por favor inserte el mensaje que desea encriptar"></textarea>
+            <div id="div-desaparece">
+                <h6 class="Informacion">***Solo letras minúsculas y sin acentos.***</h6>
+            </div>
+            <div class="botones">
+                <button class="encriptar" onclick="ButtonEncriptar()">
+                    Encriptar
+                </button>
+                <button class="desencriptar" onclick="ButtonDesencriptar()">
+                    Desencriptar
+                </button>
+            </div>
+        </section>
+            
+        <section class="caja2">
+            <textarea class="MensajeEncriptado" cols="37" rows="9"></textarea>
+            <button class="CopiarMensaje" onclick="copiar()">
+                Copiar
+            </button>
+        </section>
+    </main>
+
+    <script src="Java.js"></script>
+    
+    <footer>
+        <marquee behavior="scroll" direction="left">Creado por Jossué Sanabria Solano - 2022</marquee>
+    </footer>
+</body>
+    
+</html>
